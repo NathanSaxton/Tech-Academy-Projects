@@ -1,13 +1,113 @@
 /* CSS Styled by Nathan Saxton*/
 
 /*General Page*/
-b {
+html {
+    font-family:  'Garamond','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
     margin: 0;
+    line-height: 1.5;
+    background-color: black;
+    color: silver;
+    text-align: center;
+}
+
+footer {
+    display: block;
+}
+
+/*Menu*/
+nav {
+    margin: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.menu-container {
+    height: 105px;
+    max-height: 340px;
+    margin: 0% auto;
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-menu {
+    color: rgba(62, 180, 137, 1);
+    font: bold 12px/18px;
+    display: inline;
+    margin: 0 auto;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-menu::after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.nav-menu li{
+    color: rgba(62, 180, 137, 1);
+    display: inline-block;
+    position: relative;
+    background-color: silver;
+    cursor: pointer;
+    padding: 10px 5%;
+    border: solid 1px rgba(0, 0, 0, .7);
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .3);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/*Rows and Columns*/
+
+.row {
+    display: block;
+}
+.col {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 500px;
 }
 
 
 
 /*Video and Image*/
 
+img {
+    width: 720px;
+    height: 480px;
+}
+
+video {
+    width: 720px;
+    height: 480px;
+    filter: grayscale();
+}
 
 /*Animations*/
+
+.nav-menu li {
+    transition-property: background;
+    transition-duration: .3s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-menu li:hover {
+    background-color: rgba(62, 180, 137, .7);
+    color: rgb(192, 192, 192);
+}
