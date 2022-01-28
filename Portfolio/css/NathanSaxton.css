@@ -44,12 +44,14 @@ nav {
 
 .nav-menu {
     color: rgba(62, 180, 137, 1);
-    font: bold 12px/18px;
+    font: bold 12px/18px sans-serif;
     display: inline;
     margin: 0 auto;
     list-style: none;
     text-decoration: none;
     text-align: center;
+    width: 100%;
+    padding: 1px 0px;
 }
 
 .nav-menu::after {
@@ -64,11 +66,11 @@ nav {
     position: relative;
     background-color: silver;
     cursor: pointer;
-    padding: 10px 5%;
+    padding: 20px 4%;
     border: solid 1px rgba(0, 0, 0, .7);
     box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .3);
-    font-weight: 900;
-    font-size: 18px;
+    font-size: x-large;
+    margin: 0 auto;
 }
 
 /*Rows and Columns*/
@@ -80,21 +82,20 @@ nav {
     display: block;
     float: left;
     width: 50%;
-    height: 500px;
+    height: 30em;
 }
-
 
 
 /*Video and Image*/
 
 img {
-    width: 720px;
+    width: 100%;
     height: 480px;
 }
 
 video {
-    width: 720px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
     filter: grayscale();
 }
 
@@ -110,4 +111,47 @@ video {
 .nav-menu li:hover {
     background-color: rgba(62, 180, 137, .7);
     color: rgb(192, 192, 192);
+}
+
+/*Adaptable screen*/
+
+@media screen and (max-width:600px){
+    .nav {
+        bottom: 0;
+        padding: 0;
+    }
+
+    .menu-container {
+        padding: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .nav-menu {
+        float: left;
+        padding: 0;
+        margin: 0 10%;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+    }
+
+    .nav-menu li{
+        position: relative;
+        display: inline-block;
+        width: 20%;
+        margin: 0;
+        font-size: large;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    
+    .row {
+        position: relative;
+    }
+    
+    .col {
+        width: 100%;
+        float: no;
+    }
 }
