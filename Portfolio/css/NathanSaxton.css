@@ -88,7 +88,7 @@ nav {
     padding: 20px 4%;
     border: solid 1px rgba(0, 0, 0, .7);
     box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .3);
-    font-size: x-large;
+    font-size: 2vw;
     margin: 0 auto;
 }
 
@@ -109,7 +109,7 @@ nav {
     position: absolute;
     display:block;
     float: left;
-    top: 69px;
+    top: 1%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -119,10 +119,17 @@ nav {
 }
 
 .banner-overlay h1 {
-    padding-top: 15%;
-    font-size: 4em;
+    padding-top: 10%;
+    font-size: 8vw;
     color: goldenrod;
+    width: 90%;
+    padding-left: 5%;
+}
 
+.banner-overlay p {
+    font-size: 2vw;
+    width: 50%;
+    padding: 1% 25%;
 }
 
 /*Rows and Columns*/
@@ -194,7 +201,7 @@ video {
         display: inline-block;
         width: 20%;
         margin: 0;
-        font-size: large;
+        font-size: 3vw;
         padding: 10px 0px;
         text-align: center;
     }
@@ -209,7 +216,12 @@ video {
     }
 
     .banner-overlay h1 {
-        padding: 1%;
-        font-size: 2rem;
+        padding-top: 15%;
+    }
+
+    .banner-overlay p {
+        font-size: 4vw;
+        width: 80%;
+        padding: 1% 10%;
     }
 }
