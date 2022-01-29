@@ -30,9 +30,9 @@ section {
 }
 
 .media-container {
-    display: block;
     width: 100%;
     border-radius: 10px;
+    position: relative;
 }
 
 footer {
@@ -43,7 +43,6 @@ footer {
 nav {
     margin: 0;
     width: 100%;
-    display: block;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -55,12 +54,10 @@ nav {
     height: 105px;
     max-height: 340px;
     margin: 0% auto;
-    display: block;
     width: 100%;
     position: fixed;
     z-index: 100;
     padding: 0;
-    text-align: center;
 }
 
 .nav-menu {
@@ -70,7 +67,6 @@ nav {
     margin: 0 auto;
     list-style: none;
     text-decoration: none;
-    text-align: center;
     width: 100%;
     padding: 1px 0px;
 }
@@ -100,12 +96,6 @@ nav {
     padding-top: 70px;
 }
 
-.media-container {
-    max-height: 100%;
-    overflow: hidden;
-    padding-bottom: 0;
-}
-
 .media-container video {
     margin: 0;
     max-width: 100%;
@@ -115,25 +105,22 @@ nav {
 
 .banner-overlay {
     position: absolute;
-    display:block;
-    float: left;
     top: 0;
-    left: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
+    float: none;
     width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, .7);
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-overlay h1 {
-    padding-top: 10%;
     font-size: 8vw;
     color: goldenrod;
-    width: 90%;
-    padding-left: 5%;
 }
 
 .banner-overlay p {
@@ -146,14 +133,13 @@ nav {
 
 .row {
     display: block;
-    height: 30em;
+    height: 100%;
 }
 .col {
     display: block;
     float: left;
     width: 50%;
     height: 100%;
-    padding-top: 40%;
     overflow: hidden;
 }
 
@@ -226,7 +212,7 @@ video {
     }
 
     .banner-overlay h1 {
-        padding-top: 15%;
+        padding: 0 5%;
     }
 
     .banner-overlay p {
